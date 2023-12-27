@@ -1,0 +1,17 @@
+extends base
+block append head
+    link(rel='stylesheet', href='/css/overview.css')
+block content
+    
+
+    .container
+    .product-cards
+        //- h1 hlo
+    
+        each product in products
+            .product-card
+                a(href=`/product/${product.slug}`)
+                    img(src=`/img/products/${product.image}` alt=`${product.name}`)
+                .product-info
+                    h1 #{product.name}
+                    h3 $#{product.price}

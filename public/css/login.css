@@ -1,0 +1,45 @@
+
+
+.main {
+    /* Existing styles for the main container */
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.heading-secondary{
+    /* Existing styles for the secondary heading */
+}
+
+.form {
+    /* Existing styles for the form */
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    /* Existing styles for the input */
+}
+
+.btn {
+    /* Existing common button styles */
+}
+
+.btn--green {
+    background-color: green;
+    color: white;
+}
+
+/* Additional styles for specific form elements if needed */

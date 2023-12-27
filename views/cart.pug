@@ -1,0 +1,63 @@
+extends base
+block append head
+    link(rel='stylesheet', href='/css/cart.css')
+    
+    
+
+
+
+block content
+    .wrapper
+        h1 cart
+        .project
+            .shop.scroll(style="height: 500px; overflow: auto; overflow-x: hidden;")
+                .box.shadow.prod_data
+                    img(src="/img/products/hat1.jpg", alt="")
+                    .content
+                        h3 Hat
+                            p Size:medium
+                            input.prod_id(type="hidden", value="pro.id")
+                            p.unit
+                                | Quantity:
+                                input.qty.changeqty(data-item="1", id="quantity", value="1", data-product-id="1", min="1", max="4", type='number')
+                               
+                                
+
+                            p.amt(id="proid", hidden) total
+                        h
+                        h5 Rs:400
+                         
+                
+                        p.btn-area
+                            span.btn4
+                                a(href="")
+                                    i.fa.fa-trash
+                
+                        
+
+                            
+                a.check(href="#")
+                    i.fa.fa-shopping-cart Checkout
+            .right-bar.shadow
+                p
+                    span Total
+                    span#Total RS:500
+                    hr
+                p
+                    span Delivery Charge
+                    span 50
+                     br
+                    br
+                    br
+                p
+                span Grand Total : 550
+                   
+                span#Grandtotal
+                br
+                br
+                a.check(href="")
+                    i.fa.fa-shopping-cart 
+                        | Checkout
+        .cart1.text-center.fw-lighter.mt-5.mb-5
+
+            //- img(src="/img/products/hat1.jpg", alt="")

@@ -1,0 +1,24 @@
+extends base
+block append head
+    link(rel='stylesheet', href='/css/product.css')
+    
+block content
+    
+
+    .container
+    .product-cards
+            .product-card
+                a(href="")
+                img(src=`/img/products/${product.image}` alt=`${product.name}`)
+                .product-info
+                    h1= `${product.name}`
+                    h3= `$${product.price}`
+                    h4=`${product.description}`
+                    
+                    h4
+                        | Seller:
+                        span=   `${product.seller.name}`
+                        h4
+                            | Category:
+                            span=    `${product.category.name}`
+                    a.btn.btn--green.btn--small.btn--right(href=`#`) Add To Cart
